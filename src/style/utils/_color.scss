@@ -1,0 +1,9 @@
+@each $color, $value in $theme-colors {
+  .u-hover-bg-#{$color} {
+    color: $black;
+    &:hover {
+      background-color: $value;
+      @include transition($btn-transition);
+    }
+  }
+}
